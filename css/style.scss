@@ -1,0 +1,542 @@
+// 全体の設定
+body {
+  color: #000000;
+  font-family: 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,
+    'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,
+    sans-serif;
+  font-size: 14px;
+}
+.wrapper {
+  overflow: hidden;
+}
+p {
+  line-height: 1.8;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.sidebar {
+  display: none;
+}
+
+
+.main-contents {
+  width: 100%;
+  justify-content: left;
+}
+.header {
+  .header-img-box > img {
+    padding-bottom: 85px;
+  }
+}
+
+.message-section {
+  .header-heading {
+    width: 115px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  h2 {
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
+    border-bottom: 3px solid #9c9797;
+    padding: 0 0 25px 0;
+    margin: 0 auto;
+  }
+  p {
+    padding: 0 20%;
+    padding-bottom: 85px;
+    width: 60%;
+    font-size: 14px;
+  }
+}
+
+.gallery {
+  padding-bottom: 85px;
+}
+
+.gallery-image-6 {
+  display: flex;
+  flex-wrap: wrap;
+  img {
+    width: 100%;
+    vertical-align: top;
+  }
+}
+.gallery-single {
+  img {
+    vertical-align: top;
+  }
+}
+.brand-section {
+  padding-bottom: 85px;
+  .brand-heading {
+    width: 85px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  h2 {
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
+    border-bottom: 3px solid #9c9797;
+    padding: 0 0 25px 0;
+    margin: 0 auto;
+  }
+  .brand-items {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 55px;
+    border-bottom: 1px solid #9c9797;
+  }
+  .brand-single {
+    width: 100%;
+    padding-right: 50px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-align: center;
+    img {
+      margin: 0 auto;
+      width: 170px;
+      height: 170px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+.project-section {
+  padding-bottom: 85px;
+  .project-heading {
+    width: 105px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  h2 {
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
+    border-bottom: 3px solid #9c9797;
+    padding: 0 0 25px 0;
+    margin: 0 auto;
+  }
+  .project-items {
+    width: 78%;
+    margin: 0 auto;
+    border-bottom: 1px solid #9c9797;
+    padding-bottom: 50px;
+  }
+  .project-single {
+    padding-bottom: 75px;
+    padding-bottom: 75px;
+    img {
+      width: 375px;
+      height: 225px;
+      padding-right: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+.company-section {
+  padding-bottom: 85px;
+  .company-heading {
+    width: 120px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  h2 {
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
+    border-bottom: 3px solid #9c9797;
+    padding: 0 0 25px 0;
+    margin: 0 auto;
+  }
+  .company-items {
+    display: block;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+  .company-address {
+    padding-right: 5%;
+    width: 270px;
+    height: 200px;
+    p {
+      font-size: 14px;
+    }
+  }
+  .company-map {
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+   iframe {
+     max-width: 270px;
+     height: 250px;
+   }
+  }
+}
+.footer-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  p {
+    font-size: 14px;
+    padding-bottom: 30px;
+    a {
+      color: #0066ff;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// ハンバーガーメニュー
+.nav-wrapper {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background: white;
+  height: 40px;
+  .logo-wrapper {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .nav-logo {
+    width: 90px;
+    height: 25px;
+  }
+}
+
+.nav-social-media {
+  display: flex;
+  .nav-social-link {
+    padding:15px 10px;
+  :hover {
+    opacity: 0.8;
+  }
+  .social-nav img {
+    width: 20px;
+    height: 20px;
+  }
+  }
+}
+.nav-wrapper .drawer-menu .drawer-item {
+  display: block;
+  border-bottom: 1px solid black;
+}
+.nav-wrapper .drawer-menu .drawer-link {
+  display: block;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
+  a ::before {
+    display: block;
+    content: "";
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    transform: rotate(45deg);
+    left: 10px;
+    top: 50%;
+  }
+}
+#nav-wrapper .btn-gnavi {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  width: 30px;
+  height: 24px;
+  z-index: 3;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+#nav-wrapper .btn-gnavi span {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #666;
+  border-radius: 10px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+#nav-wrapper #btn span:nth-child(1) {
+  top:0;
+}
+#nav-wrapper #btn span:nth-child(2) {
+  top: 10px;
+}
+#nav-wrapper #btn span:nth-child(3) {
+  top:20px;
+}
+#nav-wrapper #btn.active span:nth-child(1) {
+  top:-10px;
+  -webkit-transform: translateY(20px) rotate(45deg);
+  transform: translateY(20px) rotate(45deg);
+}
+#nav-wrapper #btn.active span:nth-child(2) {
+  top: 10px;
+
+  opacity: 0;
+}
+#nav-wrapper #btn.active span:nth-child(3) {
+  top:10px;
+  -webkit-transform: translateY(0px) rotate(-45deg);
+  transform: translateY(0px) rotate(-45deg);
+}
+#nav-wrapper .btn-gnavi.open span {
+  background: #000000;
+}
+#nav-wrapper .btn-gnavi.open span {
+  width: 24px;
+}
+
+// レスポンシブ
+@media (min-width: 800px) {
+  #nav-wrapper {
+    display: none;
+  }
+  .sidebar {
+    display: block;
+  }
+  .wrapper {
+    width: 100%;
+  }
+
+  .sidebar {
+    position: fixed;
+    background: #ffffff;
+    width: 15%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    ul > li {
+      padding: 15px 0;
+    }
+    .logo {
+      width: 90px;
+      height: 25px;
+      padding-bottom: 40px;
+    }
+    li > a {
+      font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
+      font-size: 14px;
+    }
+  }
+
+  .social-media-wrapper {
+    padding-left: 55px;
+    .social-media {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 50px;
+      li {
+        max-width: 100%;
+        height: 20px;
+        width: 20px;
+        padding-right: 15px;
+        img:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .sidebar-wrapper {
+    width: 30%;
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 55px;
+  }
+
+  .main-contents {
+    width: 85%;
+    justify-content: left;
+  }
+  .header {
+    .header-img-box > img {
+      padding-bottom: 85px;
+    }
+  }
+  .message-section {
+    .header-heading {
+      width: 115px;
+      margin: 0 auto;
+      padding-bottom: 60px;
+    }
+    h2 {
+      font-size: 22px;
+      text-align: center;
+      font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
+      border-bottom: 3px solid #9c9797;
+      padding: 0 0 25px 0;
+      margin: 0 auto;
+    }
+    p {
+      padding: 0 20%;
+      padding-bottom: 85px;
+      width: 60%;
+      font-size: 14px;
+    }
+  }
+  .gallery {
+    padding-bottom: 85px;
+  }
+
+  .gallery-image-6 {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      width: 33.3%;
+    }
+  }
+  .gallery-single {
+    img {
+      vertical-align: top;
+    }
+  }
+  .brand-section {
+    padding-bottom: 85px;
+    .brand-heading {
+      width: 85px;
+      margin: 0 auto;
+      padding-bottom: 60px;
+    }
+    h2 {
+      font-size: 22px;
+      text-align: center;
+      font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
+      border-bottom: 3px solid #9c9797;
+      padding: 0 0 25px 0;
+      margin: 0 auto;
+    }
+    .brand-items {
+      display: flex;
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: 55px;
+      border-bottom: 1px solid #9c9797;
+    }
+    .brand-single {
+      width: 18%;
+      padding-right: 50px;
+      margin: 0 auto;
+      p {
+        font-size: 14px;
+      }
+    }
+    .brand-single:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .project-section {
+    padding-bottom: 85px;
+    .project-heading {
+      width: 105px;
+      margin: 0 auto;
+      padding-bottom: 60px;
+    }
+    h2 {
+      font-size: 22px;
+      text-align: center;
+      font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
+      border-bottom: 3px solid #9c9797;
+      padding: 0 0 25px 0;
+      margin: 0 auto;
+    }
+    .project-items {
+      width: 80%;
+      margin: 0 auto;
+      border-bottom: 1px solid #9c9797;
+      padding-bottom: 50px;
+    }
+    .project-single {
+      padding-bottom: 75px;
+      padding-bottom: 75px;
+      img {
+        display: inline;
+        width: 375px;
+        height: 225px;
+        padding-right: 20px;
+      }
+      p {
+        display: inline;
+        font-size: 14px;
+      }
+    }
+  }
+  .company-section {
+    padding-bottom: 85px;
+    .company-heading {
+      width: 120px;
+      margin: 0 auto;
+      padding-bottom: 60px;
+    }
+    h2 {
+      font-size: 22px;
+      text-align: center;
+      font-family: 'Modern Antiqua', 'Noto Sans JP', serif;
+      border-bottom: 3px solid #9c9797;
+      padding: 0 0 25px 0;
+      margin: 0 auto;
+    }
+    .company-items {
+      display: flex;
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: 310px;
+    }
+    .company-address {
+      max-width: 540px;
+      max-height: 200px;
+      padding-right: 100px;
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  .footer-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      font-size: 14px;
+      padding-bottom: 75px;
+      a {
+        color: #0066ff;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+// レスポンシブ（800以上）

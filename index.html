@@ -1,11 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/drawer.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.reset.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/drawer.min.js"></script>
   <title>Document</title>
 </head>
-<body>
+
+<body class="drawer drawer--top">
   
+  <div class="wrapper">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+  </button>
+    <div class="sidebar">
+      <div class="sidebar-wrapper">
+        <h2>
+          <img class="logo" src="images/logo.png" alt="ロゴ">
+        </h2>
+        <ul>
+          <li><a href="#top">TOP</a></li>
+          <li><a href="#message">MESSAGE</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#brand">BRAND</a></li>
+          <li><a href="#project">PROJECT</a></li>
+          <li><a href="#company">COMPANY</a></li>
+        </ul>
+      </div>
+      <div class="social-media-wrapper">
+        <ul class="social-media">
+          <li><a href="#"><img src="images/iconFb.png" alt="facebook"></a></li>
+          <li><a href="#"><img src="images/iconTw.png" alt="twitter"></a></li>
+          <li><a href="#"><img src="images/iconInsta.png" alt="instagram"></a></li>
+          <li><a href="#"><img src="images/iconYouTube.png" alt="Youtube"></a></li>
+        </ul>
+      </div>
+    </div><!-- sidebar -->
+
+    <!-- ハンバーガーメニュー -->
+    <div class="nav-wrapper">
+      <div class="logo-wrapper">
+        <h2>
+          <img class="nav-logo" src="images/logo.png" alt="ロゴ">
+        </h2>
+      </div>
+      
+      <nav class="drawer-nav">
+        <ul class="drawer-menu">
+          <li class="drawer-item"><a class="drawer-link" href="#top">TOP</a></li>
+          <li class="drawer-item"><a class="drawer-link"href="#message">MESSAGE</a></li>
+          <li class="drawer-item"><a class="drawer-link"href="#gallery">GALLERY</a></li>
+          <li class="drawer-item"><a class="drawer-link"href="#brand">BRAND</a></li>
+          <li class="drawer-item"><a class="drawer-link"href="#project">PROJECT</a></li>
+          <li class="drawer-item"><a class="drawer-link"href="#company">COMPANY</a></li>
+        </ul>
+        <div class="nav-social-media-wrapper">
+          <ul class="nav-social-media">
+            <li class="nav-social-link"><a class="social-nav" href="#"><img src="images/iconFb.png" alt="facebook"></a></li>
+            <li class="nav-social-link"><a class="social-nav" href="#"><img src="images/iconTw.png" alt="twitter"></a></li>
+            <li class="nav-social-link"><a class="social-nav" href="#"><img src="images/iconInsta.png" alt="instagram"></a>
+            </li>
+            <li class="nav-social-link"><a class="social-nav" href="#"><img src="images/iconYouTube.png" alt="Youtube"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- ハンバーガーメニュー -->
+
+    <div class="main-contents">
+      <header class="header">
+        <div class="header-img-box" id="top">
+          <img src="images/mainImg.jpg" alt="女性が遠く眺める画像">
+        </div>
+        <section class="message-section">
+          <div class="message-setion-wrapper">
+            <div class="header-heading" id="message">
+              <h2>MESSAGE</h2>
+            </div>
+            <p>
+              ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社。ホームページサンプル株式会社では最新技術と自然との調和を目な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。
+            </p>
+          </div>
+        </section>
+      </header>
+      <main>
+        <div class="gallery" id="gallery">
+          <div class="gallery-image-6">
+            <img src="images/photo01.jpg" alt="ジーンズ">
+            <img src="images/photo02.jpg" alt="シャツ">
+            <img src="images/photo03.jpg" alt="ラクロス">
+            <img src="images/photo04.jpg" alt="ズボン">
+            <img src="images/photo05.jpg" alt="ニット帽">
+            <img src="images/photo06.jpg" alt="ダウンベスト">
+          </div>
+          <div class="gallery-single">
+            <img src="images/photo07.jpg" alt="蝶ネクタイ">
+          </div>
+          <div class="gallery-image-6">
+            <img src="images/photo08.jpg" alt="ジャケット">
+            <img src="images/photo09.jpg" alt="スニーカー">
+            <img src="images/photo10.jpg" alt="帽子">
+            <img src="images/photo11.jpg" alt="時計">
+            <img src="images/photo12.jpg" alt="公園に立つ人">
+            <img src="images/photo13.jpg" alt="服屋">
+          </div>
+        </div>
+
+        <section class="brand-section">
+          <div class="brand-wrapper">
+            <div class="brand-heading" id="brand">
+              <h2>BRAND</h2>
+            </div>
+            <div class="brand-items">
+              <div class="brand-single">
+                <img src="images/logo01.png" alt="ブランドのロゴ">
+                <p>ホームページサンプル株式会社では最動かす企業を目指します。</p>
+              </div>
+              <div class="brand-single">
+                <img src="images/logo02.png" alt="The Makerのロゴ">
+                <p>革新的な技術で世の中を動かす企業を目します。世の中を動かす。</p>
+              </div>
+              <div class="brand-single">
+                <img src="images/logo03.png" alt="洋服生活のロゴ">
+                <p>株式会社では最動かす企業を目指しますージン企業を目指します。</p>
+              </div>
+              <div class="brand-single">
+                <img src="images/logo04.png" alt="TAKAYAのロゴ">
+                <p>株式会社では最動かす企業を指しますージサン企業を目指します。</p>
+              </div>
+            </div><!-- brand-items-->
+          </div>
+        </section>
+        <!-- brand-section -->
+
+        <!--Project-section-->
+        <section class="project-section">
+          <div class="project-wrapper">
+            <div class="project-heading" id="project">
+              <h2>PROJECT</h2>
+            </div>
+            <div class="project-items">
+              <div class="project-single">
+                <img src="images/photo14.jpg" alt="おじいさん" align="left">
+                <p>ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な革新的な革新的な技術で世の中を技術で世の中を技術で世の中を動かす企業を目指します。
+                  <br>
+                  <br>
+                  ホームページサンプル株式会社。ホームページサンプル最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社。ホームページサンプル最新技術と自然との調和を目指し調和を目指し調和を目指します。革新的な技術で世の中を動かす企業を目指します。
+                </p>
+              </div>
+
+              <div class="project-single">
+                <img src="images/photo15.jpg" alt="ミシン" align="left">
+                <p>ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な革新的な革新的な技術で世の中を技術で世の中を技術で世の中を動かす企業を目指します。
+                  <br>
+                  <br>
+                  ホームページサンプル株式会社。ホームページサンプル最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社。ホームページサンプル最新技術と自然との調和を目指し調和を目指し調和を目指します。革新的な技術で世の中を動かす企業を目指します。
+                </p>
+              </div>
+            </div><!-- project-items -->
+          </div><!-- project-wrapper -->
+        </section>
+        <section class="company-section">
+          <div class="company-section-wrapper">
+            <div class="company-heading" id="company">
+              <h2>COMPANY</h2>
+            </div>
+            <div class="company-items">
+              <div class="company-address">
+                <p>
+                <p>〒103-1234</p>
+                <p>見本県見本市仮区見本町1-3-5</p>
+                <p>TEL 01234-567-8901</p>
+                <p>e-Mail info@example.com</p>
+                <p>営業時間 10:00〜20:00（水曜定休）</p>
+                <p>※都合により休業する場合がございます</p>
+                </p>
+              </div>
+              <div class="company-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.341394105701!2d135.80930301522346!3d34.595527780461694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001313f0af1417b%3A0x5808174660c4bf92!2sSaika%20Ramen!5e0!3m2!1sen!2sjp!4v1603862008653!5m2!1sen!2sjp"
+                  width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                  tabindex="0"></iframe>
+              </div>
+            </div><!-- company-items -->
+          </div>
+        </section><!-- company-section -->
+      </main>
+      <footer class="footer">
+        <div class="footer-wrapper">
+          <p>Copyright(c) 2016 Sample Inc. All Rights Reserved. Design by <a href="#">http://f-tpl.com</a></p>
+        </div>
+      </footer>
+    </div><!-- main-contents-->
+  </div>
+  <script src="js/menu.js"></script>
+  <script>
+    $(function() {
+        $('.drawer').drawer();
+    });
+    </script>
 </body>
+
 </html>
