@@ -65,9 +65,9 @@ a:hover {
 }
 
 .message-section p {
-  padding: 0 20%;
-  padding-bottom: 85px;
-  width: 60%;
+  padding-bottom: 30px;
+  width: 94%;
+  margin: 0 auto;
   font-size: 14px;
 }
 
@@ -252,11 +252,16 @@ a:hover {
   width: 100%;
   background: white;
   height: 40px;
+  border-bottom: 1px solid #ccc;
 }
 
 .nav-wrapper .logo-wrapper {
   text-align: center;
   padding: 10px 0;
+}
+
+.nav-wrapper .logo-wrapper button {
+  top: -6px;
 }
 
 .nav-wrapper .nav-logo {
@@ -367,8 +372,19 @@ a:hover {
   width: 24px;
 }
 
+@media (min-width: 641px) {
+  .message-section p {
+    padding: 0 20%;
+    padding-bottom: 85px;
+    width: 60%;
+  }
+}
+
 @media (min-width: 800px) {
-  #nav-wrapper {
+  .nav-wrapper {
+    height: 0;
+  }
+  button.drawer-toggle.drawer-hamburger {
     display: none;
   }
   .sidebar {
@@ -419,9 +435,8 @@ a:hover {
   }
   .sidebar-wrapper {
     width: 30%;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 30px;
-    padding-left: 55px;
   }
   .main-contents {
     width: 85%;

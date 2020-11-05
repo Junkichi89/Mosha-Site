@@ -8,18 +8,15 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style.reset.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="js/iscroll.js"></script>
-<script src="js/drawer.min.js"></script>
+  <script src="js/iscroll.js"></script>
+  <script src="js/drawer.min.js"></script>
   <title>Document</title>
 </head>
 
 <body class="drawer drawer--top">
-  
+
   <div class="wrapper">
-    <button type="button" class="drawer-toggle drawer-hamburger">
-      <span class="sr-only">toggle navigation</span>
-      <span class="drawer-hamburger-icon"></span>
-  </button>
+
     <div class="sidebar">
       <div class="sidebar-wrapper">
         <h2>
@@ -47,27 +44,35 @@
     <!-- ハンバーガーメニュー -->
     <div class="nav-wrapper">
       <div class="logo-wrapper">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
         <h2>
           <img class="nav-logo" src="images/logo.png" alt="ロゴ">
         </h2>
       </div>
-      
+
       <nav class="drawer-nav">
         <ul class="drawer-menu">
           <li class="drawer-item"><a class="drawer-link" href="#top">TOP</a></li>
-          <li class="drawer-item"><a class="drawer-link"href="#message">MESSAGE</a></li>
-          <li class="drawer-item"><a class="drawer-link"href="#gallery">GALLERY</a></li>
-          <li class="drawer-item"><a class="drawer-link"href="#brand">BRAND</a></li>
-          <li class="drawer-item"><a class="drawer-link"href="#project">PROJECT</a></li>
-          <li class="drawer-item"><a class="drawer-link"href="#company">COMPANY</a></li>
+          <li class="drawer-item"><a class="drawer-link" href="#message">MESSAGE</a></li>
+          <li class="drawer-item"><a class="drawer-link" href="#gallery">GALLERY</a></li>
+          <li class="drawer-item"><a class="drawer-link" href="#brand">BRAND</a></li>
+          <li class="drawer-item"><a class="drawer-link" href="#project">PROJECT</a></li>
+          <li class="drawer-item"><a class="drawer-link" href="#company">COMPANY</a></li>
         </ul>
         <div class="nav-social-media-wrapper">
           <ul class="nav-social-media">
-            <li class="nav-social-link"><a class="social-nav" href="#"><img src="images/iconFb.png" alt="facebook"></a></li>
-            <li class="nav-social-link"><a class="social-nav" href="#"><img src="images/iconTw.png" alt="twitter"></a></li>
-            <li class="nav-social-link"><a class="social-nav" href="#"><img src="images/iconInsta.png" alt="instagram"></a>
+            <li class="nav-social-link"><a class="social-nav" href="#"><img src="images/iconFb.png" alt="facebook"></a>
             </li>
-            <li class="nav-social-link"><a class="social-nav" href="#"><img src="images/iconYouTube.png" alt="Youtube"></a>
+            <li class="nav-social-link"><a class="social-nav" href="#"><img src="images/iconTw.png" alt="twitter"></a>
+            </li>
+            <li class="nav-social-link"><a class="social-nav" href="#"><img src="images/iconInsta.png"
+                  alt="instagram"></a>
+            </li>
+            <li class="nav-social-link"><a class="social-nav" href="#"><img src="images/iconYouTube.png"
+                  alt="Youtube"></a>
             </li>
           </ul>
         </div>
@@ -203,10 +208,10 @@
   </div>
   <script src="js/menu.js"></script>
   <script>
-    $(function() {
-        $('.drawer').drawer();
+    $(function () {
+      $('.drawer').drawer();
     });
-    </script>
+  </script>
 </body>
 
 </html>
