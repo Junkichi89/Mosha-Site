@@ -62,9 +62,9 @@ a:hover {
     margin: 0 auto;
   }
   p {
-    padding: 0 20%;
-    padding-bottom: 85px;
-    width: 60%;
+    padding-bottom: 30px;
+    width: 94%;
+    margin: 0 auto;
     font-size: 14px;
   }
 }
@@ -222,9 +222,13 @@ a:hover {
   width: 100%;
   background: white;
   height: 40px;
+  border-bottom: 1px solid #ccc;
   .logo-wrapper {
     text-align: center;
     padding: 10px 0;
+    button {
+      top: -6px;
+    }
   }
   .nav-logo {
     width: 90px;
@@ -316,12 +320,26 @@ a:hover {
 #nav-wrapper .btn-gnavi.open span {
   width: 24px;
 }
+@media(min-width: 641px ) {
+  .message-section {
+  p {
+    padding: 0 20%;
+    padding-bottom: 85px;
+    width: 60%;
+  }
+}
+}
 
 // レスポンシブ
 @media (min-width: 800px) {
-  #nav-wrapper {
-    display: none;
+
+  .nav-wrapper {
+    height: 0;
   }
+  button.drawer-toggle.drawer-hamburger {
+    display: none;
+}
+ 
   .sidebar {
     display: block;
   }
@@ -370,9 +388,8 @@ a:hover {
 
   .sidebar-wrapper {
     width: 30%;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 30px;
-    padding-left: 55px;
   }
 
   .main-contents {
